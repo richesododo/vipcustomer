@@ -2,9 +2,9 @@ FROM python:3.9-slim-buster
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-RUN bash -c "mkdir /backend"
+RUN mkdir /backend
 WORKDIR /backend
-COPY . /backend
+COPY .. /backend
 RUN pip install --upgrade pip
 RUN pip install -r requirements/development.txt
 EXPOSE 8000
