@@ -8,4 +8,4 @@ COPY . /backend
 RUN pip install --upgrade pip
 RUN pip install -r app/requirements/development.txt
 EXPOSE 8000
-CMD ["python", "server.py"]
+CMD ["python", "app/server.py"]
