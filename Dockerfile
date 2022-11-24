@@ -2,9 +2,9 @@ FROM python:3.9-slim-buster
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-ENV POSTGRES_USER=postgres
-ENV POSTGRES_PASSWORD=postgres
-ENV POSTGRES_DB=vip-back.cnlkqzqym4zr.us-west-1.rds.amazonaws.com
+ENV DB_USER=postgres
+ENV DB_PASS=postgres
+ENV DB_HOST=vip-back.cnlkqzqym4zr.us-west-1.rds.amazonaws.com
 # install system dependencies
 RUN apt-get update \
     && apt-get -y install netcat gcc postgresql \
